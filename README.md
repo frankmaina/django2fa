@@ -15,20 +15,20 @@ You need a twilio account to get the sms working. You will also need to verify t
 
 **Email**
 
-You will also need SMTP settings for your email provider. Enter those at django/settings.py
+You will also need SMTP settings for your email provider. Enter those at django2fa/settings.py
 
 
 
 **DIRECTORY STRUCTURE**
 
 -Accounts/ - handles sign in, sign up and sign out actions<br>
--Verification/ - handles all verification methods i.e. phone and email<br>
+-Verification/ - handles all verification methods i.e. phone and email also contains the email template<br>
 -Dashboard/- after successful authentication the user is redirected to dashboard<br>
 
 
 
 **TO DO**
 
-Improve on error handling (make it more friendly)
+Improve on error handling (make it more user friendly)
 
 In case of any questions/problems.  Just start a new issue.
