@@ -1,0 +1,60 @@
+
+    <div align="center"><h1><b></b></h1><br>
+    <b></b>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django 2FA | Home</title>
+        {% load staticfiles %}
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ <link href="{% static 'dashboard/css/semantic.min.css' %}" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+
+        <style>
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato';
+            }
+
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
+
+            .title {
+                font-size: 109px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div align="right">
+            <a href="/accounts/signout/" class="ui blue button" ><i class="fa fa-sign-out"></i> Signout {{ user.username }}</a>
+        <br>
+        <br>
+        <br>
+        <br>
+            <div class="content">
+                <div class="title">Welcome to the Dashboard</div>
+                <br><br><br>
+                <b>{{user.first_name}}  {{user.last_name}} -Email: {{ user.email }} </b>
+            </div>
+        </di>
+    </body>
+</html>

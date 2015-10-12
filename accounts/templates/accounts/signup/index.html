@@ -1,0 +1,20 @@
+{% extends 'accounts/basic.html'%}
+{% block content %}
+<div class="well bs-component">
+	<form class="form-horizontal" action="/accounts/signup/" method="post">
+		{% csrf_token %}
+		<fieldset>
+			<legend>Sign Up </legend>
+			{% if message %}
+			<div class="alert alert-dismissable alert-danger">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+				{{message}}
+			</div>
+			{% endif %}
+			{{ form.as_p }}
+			<input type="submit" class="btn btn-primary"  value="I'm Ready!" />
+			<div align="right"><a href="/accounts/signin">Already have an account?</a></div>
+		</fieldset>
+	</form>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'dashboard/base.html' %}
+
+{% block image_background %}http://1080wallpapershd.com/wp-content/uploads/2013/07/34_padlock_city_blur_hd_wallpaper.jpg{% endblock %}
+{% block content %}	<br><br><br>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">		<div class="ui tall piled segment">
+Hi  <b>{{ user.first_name }}</b>, a code was sent to your phone, Kindly enter the code you have recieved.
+<br>
+<form method="post" action="#">	
+{% csrf_token %}	
+{{ form.as_p }}
+
+		 
+<br>
+<button class="ui blue button">Submit Code</button>
+</form>
+<br>
+<a href="#">I did not recieve any code.</a>	
+</div>
+  </div>
+  <div class="col-md-3"></div>
+</div
+
+
+
+{% endblock %}
