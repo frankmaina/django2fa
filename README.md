@@ -17,9 +17,9 @@ You will also need SMTP settings for your email provider. Enter those at django/
 
 **DIRECTORY STRUCTURE**
 
--Accounts/ - handles sign in, sign up and sign out actions
--Verification/ - handles all verification methods i.e. phone and email
--Dashboard/- after successful authentication the user is redirected to dashboard
+-Accounts/ - handles sign in, sign up and sign out actions<br>
+-Verification/ - handles all verification methods i.e. phone and email<br>
+-Dashboard/- after successful authentication the user is redirected to dashboard<br>
 
 **TO DO**
 
