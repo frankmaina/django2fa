@@ -18,8 +18,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-   url(r'^accounts/', include('accounts.urls'),name="accounts"),
-   url(r'^dashboard/', include('dashboard.urls'),name="dashboard"),
-   url(r'^$', include('dashboard.urls'),name="home"),
-    url(r'^verification/', include('verification.urls'),name="verification"),
+    url(r'^accounts/', include('accounts.urls'), name="accounts"),
+    url(r'^dashboard/', include('dashboard.urls'), name="dashboard"),
+    url(r'^$', include('dashboard.urls'), name="home"),
+    url(r'^verification/', include('verification.urls'), name="verification"),
 ]

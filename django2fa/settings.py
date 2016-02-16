@@ -97,13 +97,13 @@ STATIC_URL = '/static/'
 TWILIO_ACCOUNT_SID = ''
 TWILIO_AUTH_TOKEN = ''
 TWILIO_PHONE_NUMBER = ""
-SITE_URL = "127.0.0.1:8000" #development address 127.0.0.1
+SITE_URL = "127.0.0.1:8000"  # development address 127.0.0.1
 
-#For email
+# For email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = ''
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
-EMAIL_PORT = 
+EMAIL_PORT =
